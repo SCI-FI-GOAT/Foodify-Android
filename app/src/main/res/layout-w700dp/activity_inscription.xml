@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/baground_admin1">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Rejoignez nous"
+        android:textColor="#fff"
+        android:textSize="28dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edt_insc_nom"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:hint="Nom"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_insc_prenom"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Prenom"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edt_insc_email"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_insc_tel"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Tel"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edt_insc_user"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_insc_mdp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sinsrire"
+        android:text="S'inscrire"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7">
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_inscrit_deja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Vous êtes déjà inscrit ? Login"
+        android:textColor="#dedede"
+        android:textSize="17dp" />
+
+</LinearLayout>

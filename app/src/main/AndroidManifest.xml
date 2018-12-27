@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.esprit.projetespritfood"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_menu"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_menu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="com.esprit.projetespritfood.InscriptionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.esprit.projetespritfood.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.esprit.projetespritfood.Frame" android:screenOrientation="portrait" />
+        <activity android:name="com.esprit.projetespritfood.ChangerMDP" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.esprit.projetespritfood.HomeActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.esprit.projetespritfood.AdminHomeActivity" android:screenOrientation="landscape"
+            android:label="@string/title_activity_admin_home" />
+        <activity android:name="com.esprit.projetespritfood.UploadPhotoUser" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Ajouter une nouvelle offre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textColor="#028678"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_categorie_food_offre_ajout"
+            android:text="Categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txt_food_offe_ajout"
+            android:text="Varieté"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinner_categirifood_offre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_food_offre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ajout_offre_taux_reduction"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lines="2"
+        android:inputType="number"
+        android:hint="Réduction en % :"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ajout_offre_description"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lines="2"
+        android:hint="Description"/>
+
+
+    <Button
+        android:id="@+id/btn_ajouter_offre"
+        android:text="Ajouter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:alpha="0.7"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+
+</LinearLayout>

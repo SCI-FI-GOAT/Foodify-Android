@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cadcdb"
+        android:orientation="vertical">
+
+        <!--  Commande -->
+        <TextView
+            android:id="@+id/txt_user_commandes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes commandes"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+            android:id="@+id/liste_commandes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            app:backgroundMenuColor="#cadcdb"
+            app:icon_height="50dp"
+            app:icon_width="50dp"
+            app:item_backgroundColor="#ffffff"
+            app:item_marginBottom="3dp"
+            app:item_marginLeft="3dp"
+            app:item_marginRight="3dp"
+            app:item_marginTop="3dp"
+            app:item_textColor="#544847"
+            app:item_textSize="6dp">
+
+        </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+
+        <!-- TOP 5 -->
+        <TextView
+            android:id="@+id/txt_user_top5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOP 5"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lst_top5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cadcdb"
+            android:layout_marginLeft="4dp"/>
+
+        <!-- PROMOS -->
+        <TextView
+            android:id="@+id/txt_user_promos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promos"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lst_offre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cadcdb"
+            android:layout_marginLeft="4dp"/>
+
+        <!-- Recommandation -->
+        <TextView
+            android:id="@+id/txt_user_recommandation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommandation"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lst_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cadcdb"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i"/>
+
+     </LinearLayout>
+</ScrollView>
+

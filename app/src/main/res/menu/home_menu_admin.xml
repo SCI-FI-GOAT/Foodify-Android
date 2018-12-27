@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/navig_home_admin"
+            android:icon="@drawable/ic_home"
+            android:title="Menu principal"/>
+
+        <item android:id="@+id/navig_commandes_admin"
+            android:icon="@drawable/ic_comment_black_24dp"
+            android:title="Commandes Liste"/>
+
+        <item android:id="@+id/navig_offre_admin"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Offres"/>
+
+        <item android:id="@+id/navig_menu_admin"
+            android:icon="@drawable/ic_restaurant_menu"
+            android:title="Menu"/>
+
+        <item android:id="@+id/navig_restau_admin"
+            android:icon="@drawable/ic_map_marker"
+            android:title="Restau"/>
+
+        <item android:id="@+id/navig_utilisateur_admin"
+            android:icon="@drawable/ic_clients"
+            android:title="Utilisateur"/>
+
+    </group>
+    <item android:title="Paramètres" >
+        <menu>
+            <item android:id="@+id/navig_changermdp_admin"
+                android:title="Changer mot de passe"/>
+            <item android:id="@+id/navig_deconexion_admin"
+                android:title="Se déconnecter"/>
+        </menu>
+
+    </item>
+
+</menu>

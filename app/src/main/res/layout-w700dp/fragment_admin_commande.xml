@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:background="#cadcdb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <ListView
+            android:id="@+id/listView_commande_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#ffffff">
+            <Button
+                android:id="@+id/btn_annuler_commande"
+                android:text="Annuler"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b4ff3c00"
+                android:layout_marginRight="100dp"/>
+            <Button
+                android:id="@+id/btn_valider_commande"
+                android:text="Valider"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b459ff00"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

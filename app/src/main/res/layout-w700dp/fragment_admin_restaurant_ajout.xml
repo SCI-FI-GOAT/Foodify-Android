@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#cadcdb">
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ajouter un nouveau restaurant"
+            android:textColor="#028678"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edt_ajout_restau_adresse"
+            android:hint="Libelle"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+
+        <org.osmdroid.views.MapView
+            android:layout_marginTop="10dp"
+            android:id="@+id/mapview_ajout_restau"
+            android:layout_width="600dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center">
+
+        </org.osmdroid.views.MapView>
+
+        <Button
+            android:id="@+id/btn_ajouter_restau_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#b459ff00"
+            android:text="Ajouter"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#cadcdb"
+            android:layout_weight="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_ajout_restau"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="#cadcdb">
+
+            <Button
+                android:id="@+id/btn_upload_image_restau"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Upload Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_login2">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Rejoignez nous"
+        android:textColor="#fff"
+        android:textSize="28dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="#75c08141">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+>
+            <EditText
+                android:id="@+id/edt_insc_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="Nom"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edt_insc_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Prenom"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5">
+            <EditText
+                android:id="@+id/edt_insc_email"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edt_insc_tel"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Tel"
+                android:layout_weight="3"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+            <EditText
+                android:id="@+id/edt_insc_user"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/edt_insc_mdp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_weight="1"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_sinsrire"
+        android:text="S'inscrire"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#cec08141"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_inscrit_deja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Vous êtes déjà inscrit ? Login"
+        android:textColor="#ffffff"
+        android:background="#a2ba793c"
+        android:textStyle="bold"
+        android:textSize="17dp" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cadcdb"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txt_total"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Prix total ="
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_adresse"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse de la commande"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_panier_commande"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Passer la commande"
+        android:textColor="@color/colorPrimaryDark"
+        android:alpha="0.7" />
+
+    <TextView
+        android:id="@+id/txt_nb"
+        android:textColor="@color/colorAccent"
+        android:text="NB "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/listView_panier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    </ListView>
+
+
+
+</LinearLayout>

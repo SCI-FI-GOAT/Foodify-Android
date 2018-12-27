@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/item_commande_libelle"
+        android:text="libelle"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#233460"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_commande_img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="#5e999f"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_commande_quantite"
+                android:text="quantite"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_commande_adresse"
+                android:text="adresse"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="5"
+            android:weightSum="2"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/item_commande_date"
+                android:text="date"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_commande_user"
+                android:text="User"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

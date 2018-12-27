@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_commande"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Commandes" />
+
+    <item
+        android:id="@+id/navigation_offre"
+        android:icon="@drawable/ic_restaurant_menu"
+        android:title="Offres" />
+
+    <item
+        android:id="@+id/navigation_restaurant"
+        android:icon="@drawable/ic_map_marker"
+        android:title="Restaurants" />
+
+    <item
+        android:id="@+id/navigation_client"
+        android:icon="@drawable/ic_clients"
+        android:title="Utilisateurs" />
+
+</menu>
